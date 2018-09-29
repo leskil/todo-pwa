@@ -1,9 +1,15 @@
+const Path = require("path");
+const webpack = require("webpack");
+
 module.exports = {
     entry: {
-        "main": "client/app.js"
+        "main": "./client/app.js"
+        // "webpack": "webpack-hot-middleware/client"
     },
     output: {
-
-        publicPath: "assets/js"
-    }
+        path: Path.resolve(__dirname, "./wwwroot/js"),  
+        filename: "app.js",
+        publicPath: "dev/assets/"
+    },
+    mode: "development"
 }
