@@ -45,7 +45,7 @@ namespace todo_pwa
                 app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
                 {
                     HotModuleReplacement = true,
-                    ReactHotModuleReplacement = false
+                    ReactHotModuleReplacement = true
                 });
             }
             else
