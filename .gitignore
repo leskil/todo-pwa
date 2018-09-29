@@ -4,7 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # Custom compiled assets
-src/todo-pwa/wwwroot/lib/*
+src/todo-pwa/wwwroot/js/*.*
 *.min.css
 *.min.js
 
