@@ -4,7 +4,6 @@ const webpack = require("webpack");
 module.exports = {
     entry: {
         "main": "./client/app.js"
-        // "webpack": "webpack-hot-middleware/client"
     },
     output: {
         path: Path.resolve(__dirname, "./wwwroot/js"),
