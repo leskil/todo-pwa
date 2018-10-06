@@ -5,6 +5,7 @@
 
 # Custom compiled assets
 src/todo-pwa/wwwroot/js/*.*
+src/todo-pwa/wwwroot/css/*.*
 *.min.css
 *.min.js
 
