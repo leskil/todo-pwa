@@ -1,6 +1,6 @@
 var cacheName = "static-cache-v1";
 var filesToCache = [
-    "css"
+    
 ];
 
 self.addEventListener("install", function(event) {
