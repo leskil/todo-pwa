@@ -28,6 +28,11 @@ export class AddTodo extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
+
+        if (this.state.title === '') {
+            return;
+        }
+
         this.props.onTodoAdded({
             id: this.generateId(),
             title: this.state.title,

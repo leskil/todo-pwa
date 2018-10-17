@@ -8,21 +8,19 @@ export class TodoListItem extends React.Component {
         this.handleChecked = this.handleChecked.bind(this);
 
         this.state = {
-            ...props
+            ...props.item
         }
     }
 
-    handleChecked(e) {
-        console.log(e.checked)
+    handleChecked(e) {     
         this.setState({
-            checked: e.checked
-        })
-        console.log("todo item", this.state)
+            checked: e.target.checked
+        });
     }
 
     render() {
         return (
-            <li><input type="checkbox" onChange={this.handleChecked} checked={this.state.checked} name={this.state.item.id + "_checkbox"} /><label htmlFor={this.state.item.id + "_checkbox"}>{this.state.item.title}</label></li>
+            <li><input type="checkbox" onChange={this.handleChecked} checked={this.state.checked} id={this.state.id + "_checkbox"} /><label htmlFor={this.state.id + "_checkbox"} className={this.state.checked ? "checked" : ""}>{this.state.title}</label></li>
         )
     }
 }
